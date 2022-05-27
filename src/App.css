@@ -1,0 +1,169 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Unica One", cursive;
+}
+
+body {
+  margin: 0;
+  background: rgb(211, 211, 211);
+}
+
+.searchbar {
+  height: 40px;
+  margin-left: auto;
+  margin-right: 20px;
+  padding-left: 40px;
+  width: 100%;
+  max-width: 300px;
+  font-weight: 700;
+  background-color: white !important;
+  color: black;
+  border-radius: 3.5px;
+}
+
+.search-icon {
+  background: url("./assets/search-icon.png") no-repeat scroll 7px 7px;
+  background-size: 20px;
+}
+
+.searchbar::placeholder {
+  color: black;
+}
+
+.navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #121212;
+}
+
+.logo {
+  margin-top: 10px;
+  max-width: 100px;
+  margin-left: 10px;
+}
+
+.navtext {
+  color: white;
+  display: flex;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.navtext:hover {
+  font-weight: 700;
+}
+
+.navtext:focus,
+input:focus {
+  outline: none;
+}
+
+form {
+  margin-top: unset !important;
+  margin-block-end: unset !important;
+  display: contents;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-top: 40px
+}
+
+.animeCard {
+  text-align: center;
+}
+
+.anime {
+  width: 100%;
+  height: 100%;
+  max-width: 237px;
+  max-height: 338px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.title {
+  text-decoration: none;
+  color: #000000;
+}
+
+.Trending {
+  display: flex;
+  margin-left: 15px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.trending a {
+  padding: 5px 0 5px 15px;
+  text-decoration: none;
+  color: #313131;
+  font-weight: 700;
+}
+
+.upcoming-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.error-msg {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.retry-button {
+  border: none;
+  padding: 10px 45px;
+  background: white;
+  color: black;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.retry-button:active {
+  background: grey;
+  border: none;
+}
+
+.score {
+  margin-top: -15px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 767px) {
+  .searchbar {
+    padding-left: 0;
+  }
+
+  .search-icon {
+    background: unset;
+  }
+
+  .searchbar::placeholder {
+    font-size: 11px;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.space {
+  margin-top: 120px;
+}
